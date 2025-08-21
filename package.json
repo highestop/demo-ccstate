@@ -26,7 +26,7 @@
     "type-check": "tsc --noEmit",
     "validate-config": "node scripts/validate-config.js",
     "commitlint": "commitlint --edit",
-    "precommit": "npm run validate-config && npm run format:check && npm run lint",
+    "full-check": "npm run validate-config && npm run format:check && npm run lint && npm run type-check",
     "prepare": "lefthook install",
     "hooks:install": "lefthook install",
     "hooks:uninstall": "lefthook uninstall"

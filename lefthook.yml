@@ -35,7 +35,7 @@ pre-push:
     # 完整的项目检查
     full-check:
       tags: comprehensive
-      run: npm run precommit
+      run: npm run full-check
       fail_text: "❌ 检查失败！请修复所有问题后重新提交。"
 
 # 在 commit-msg 阶段验证提交信息
@@ -44,7 +44,7 @@ commit-msg:
     # 使用 commitlint 检查提交信息格式
     commitlint:
       tags: commit message
-      run: npx commitlint --edit {1}
+      run: npm run commitlint --edit {1}
       fail_text: "❌ 提交信息格式不符合规范。"
 
 # 跳过某些钩子的配置（用于紧急情况）
