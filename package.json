@@ -1,34 +1,37 @@
 {
-  "dependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.6.2",
-    "ccstate": "^5.0.0",
-    "ccstate-react": "^5.0.0",
-    "signal-timers": "^1.0.4",
-    "signal-transaction": "^1.1.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^18.0.0",
-    "@commitlint/config-conventional": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.0.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "lefthook": "^1.5.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.0.0"
-  },
-  "scripts": {
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
-    "lint": "eslint src --ext .ts,.tsx,.js,.jsx",
-    "lint:fix": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
-    "type-check": "tsc --noEmit",
-    "validate-config": "node scripts/validate-config.js",
-    "commitlint": "commitlint --edit",
-    "full-check": "npm run validate-config && npm run format:check && npm run lint && npm run type-check",
-    "prepare": "lefthook install",
-    "hooks:install": "lefthook install",
-    "hooks:uninstall": "lefthook uninstall"
-  }
+    "dependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "^4.6.2",
+        "ccstate": "^5.0.0",
+        "ccstate-react": "^5.0.0",
+        "oxlint": "^1.12.0",
+        "signal-timers": "^1.0.4",
+        "signal-transaction": "^1.1.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^18.0.0",
+        "@commitlint/config-conventional": "^18.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "eslint": "^8.0.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "lefthook": "^1.5.0",
+        "prettier": "^3.0.0",
+        "typescript": "^5.0.0"
+    },
+    "scripts": {
+        "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+        "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+        "lint": "eslint src --ext .ts,.tsx,.js,.jsx",
+        "lint:fix": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
+        "oxlint": "oxlint src",
+        "oxlint:fix": "oxlint src --fix",
+        "type-check": "tsc --noEmit",
+        "validate-config": "node scripts/validate-config.js",
+        "commitlint": "commitlint --edit",
+        "full-check": "npm run validate-config && npm run format:check && npm run oxlint && npm run type-check",
+        "prepare": "lefthook install",
+        "hooks:install": "lefthook install",
+        "hooks:uninstall": "lefthook uninstall"
+    }
 }
