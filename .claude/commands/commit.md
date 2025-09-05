@@ -1,17 +1,16 @@
 ---
 allowed-tools: Bash(git checkout*, git branch*, git commit*, git status*, git diff*, git log*)
-description: 在特性分支上创建提交
+description: 在主分支上创建提交
 ---
 
 ## 任务
 
-在特性分支上创建提交本地修改的代码
+在主分支上创建提交本地修改的代码
 
 ### 工作流程
 
-1. 检查当前分支，如果在 main 分支则创建新的 feature 分支
-2. 在 feature 分支上提交修改，创建 commit
-3. 返回创建成功的 commit 完整信息
+1. 在 main 分支上提交修改，创建 commit
+1. 返回创建成功的 commit 完整信息
 
 ## 当前状态
 
