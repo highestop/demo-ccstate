@@ -24,8 +24,8 @@ export default {
         'subject-min-length': [2, 'always', 4],
         // 主题不能以句号结尾
         'subject-full-stop': [2, 'never', '.'],
-        // 主题格式（小写开头）
-        'subject-case': [2, 'always', 'lower-case'],
+        // 主题格式（禁用大小写检查）
+        'subject-case': [0, 'never'],
         // 类型必须小写
         'type-case': [2, 'always', 'lower-case'],
         // 类型不能为空
