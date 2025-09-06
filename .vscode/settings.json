@@ -1,4 +1,9 @@
 {
+    "workbench.colorTheme": "Quiet Light",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
+    "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
