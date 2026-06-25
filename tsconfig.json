@@ -1,24 +1,4 @@
 {
-    "compilerOptions": {
-        "target": "ES2020",
-        "module": "ESNext",
-        "lib": ["ES2020", "DOM"],
-        "moduleResolution": "bundler",
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "outDir": "./dist",
-        "noEmit": true,
-        "isolatedModules": true,
-        "allowImportingTsExtensions": false,
-        "resolveJsonModule": true,
-        "types": ["vitest/globals", "@testing-library/jest-dom"]
-    },
-    "include": ["src/**/*", "vitest.config.ts"],
-    "exclude": ["node_modules", "dist"]
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }
